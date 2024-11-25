@@ -31,7 +31,7 @@ export default function NavBar() {
         <div className="flex justify-between items-center h-16">
           {/* Sección del logo */}
           <div className="flex-shrink-0">
-            <a href="/" className="w-20">
+            <a href="/" className="">
               <Image
                 src={theme === "light" ? LogoL : LogoN}
                 alt={"Logo"}
@@ -57,7 +57,11 @@ export default function NavBar() {
           <div>
             <button
               onClick={toggleTheme}
-              className="bg-gray-700 hover:bg-gray-600 text-white px-3 py-2  text-sm font-medium rounded-full"
+              className={`${
+                theme === "light" ? "fondo-gris" : "fondo-alabaster"
+              } ${
+                theme === "light" ? "text-white" : "gris"
+              }  px-3 py-2  text-sm font-medium rounded-full`}
             >
               <i
                 className={`${

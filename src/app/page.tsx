@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)] dark:bg-slate-950">
       <NavBar></NavBar>
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
         <Image
@@ -16,9 +16,9 @@ export default function Home() {
           priority
         />
         <div>
-          <p className="text-4xl">
+          <p className="text-4xl dark:text-white gris">
             Transformamos tus ideas en experiencias{" "}
-            <span className="bg-primario">digitales</span>.
+            <span className="dark:alabaster fondo-naranja">digitales</span>
           </p>
           <p>
             Ya sea una aplicación móvil, un sitio web o un prototipo, damos vida
