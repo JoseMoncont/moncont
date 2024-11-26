@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import LogoN from "@/assets/logos/logo-n.svg";
 import LogoL from "@/assets/logos/logo-p.svg";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function NavBar() {
   const [theme, setTheme] = useState<string>("light");
@@ -31,26 +32,26 @@ export default function NavBar() {
         <div className="flex justify-between items-center h-16">
           {/* Sección del logo */}
           <div className="flex-shrink-0">
-            <a href="/" className="">
+            <Link href="/" className="">
               <Image
                 src={theme === "light" ? LogoL : LogoN}
                 alt={"Logo"}
                 className="h-8"
               ></Image>
-            </a>
+            </Link>
           </div>
 
           {/* Sección de navegación */}
           <div className="hidden lg:flex  space-x-8">
-            <a href="#" className="hover:text-gray-500">
+            <Link href="#" className="hover:text-gray-500">
               Plantillas
-            </a>
-            <a href="#" className="hover:text-gray-500">
+            </Link>
+            <Link href="#" className="hover:text-gray-500">
               Precios
-            </a>
-            <a href="#" className="hover:text-gray-500">
+            </Link>
+            <Link href="#" className="hover:text-gray-500">
               Nosotros
-            </a>
+            </Link>
           </div>
 
           {/* Botón de cambio de tema */}
