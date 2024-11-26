@@ -17,7 +17,7 @@ export default function Home() {
         />
         <div>
           <p className="text-4xl dark:text-white gris">
-            Transformamos tus ideas en experiencias{" "}
+            Transformamos tus ideas en experiencias
             <span className="dark:alabaster fondo-naranja">digitales</span>
           </p>
           <p>
