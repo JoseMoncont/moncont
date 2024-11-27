@@ -46,15 +46,16 @@ export default function NavBar() {
           </Link>
         </div>
 
-        {/* Botón de menú para pantallas pequeñas */}
-        <button
-          className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-200 dark:text-gray-400 dark:hover:bg-gray-700"
-          onClick={toggleMobileMenu}
-          aria-controls="navbar-default"
-          aria-expanded={isMobileMenuOpen}
-        >
-          <span className="sr-only">Abrir menú</span>
-          <svg
+        <div>
+          <button
+            className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-200 dark:text-gray-400 dark:hover:bg-gray-700"
+            onClick={toggleMobileMenu}
+            aria-controls="navbar-default"
+            aria-expanded={isMobileMenuOpen}
+          >
+            <span className="sr-only">Abrir menú</span>
+            <i className="fa-solid fa-bars"></i>
+            {/* <svg
             className="w-6 h-6"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -67,17 +68,20 @@ export default function NavBar() {
               strokeLinejoin="round"
               d="M4 6h16M4 12h16m-7 6h7"
             />
-          </svg>
-        </button>
+          </svg> */}
+          </button>
+        </div>
+
+        {/* Botón de menú para pantallas pequeñas */}
 
         {/* Menú de navegación */}
         <div
           className={`${
             isMobileMenuOpen ? "block" : "hidden"
-          } absolute top-24 w-80 mx-auto lg:static lg:block lg:w-auto bg-gray-50 lg:bg-transparent dark:bg-gray-800 lg:dark:bg-transparent z-10`}
+          } absolute top-32 sm:top-44  w-80 mx-auto lg:static lg:block lg:w-auto  lg:bg-transparent dark:bg-gray-800 lg:dark:bg-transparent z-10 rounded-3xl`}
           id="navbar-default"
         >
-          <ul className="flex flex-col lg:flex-row lg:space-x-8 p-4 lg:p-0 lg:mt-0 border lg:border-0 border-gray-100 lg:rounded-none rounded-md bg-white lg:bg-transparent dark:bg-gray-800 dark:border-gray-700 lg:dark:bg-transparent">
+          <ul className="flex flex-col lg:flex-row lg:space-x-8 p-4 lg:p-0 lg:mt-0 border lg:border-0 border-gray-100 lg:rounded-none rounded-md bg-gray-100 lg:bg-transparent dark:bg-gray-800 dark:border-gray-700 lg:dark:bg-transparent">
             <li>
               <Link
                 href="#"
@@ -103,7 +107,7 @@ export default function NavBar() {
               </Link>
             </li>
             <li>
-              <button className="btn-primario block w-full lg:w-auto px-3 py-2 rounded">
+              <button className="btn-primario block w-full lg:w-auto px-3 py-2 ">
                 Cotizar
               </button>
             </li>
