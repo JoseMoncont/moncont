@@ -33,7 +33,7 @@ export default function NavBar() {
   };
 
   return (
-    <nav className="bg-gray-100 dark:bg-gray-900 dark:text-white rounded-full w-full md:w-full align-middle mt-20 lg:mt-10">
+    <nav className="bg-gray-100 dark:bg-gray-900 dark:text-white rounded-full w-full md:w-full lg:w-9/12 align-middle mt-20 lg:mt-10">
       <div className="max-w-screen-xl mx-auto flex items-center justify-between p-4">
         {/* Logo */}
         <div className="flex items-center">
@@ -41,7 +41,7 @@ export default function NavBar() {
             <Image
               src={theme === "light" ? LogoL : LogoN}
               alt="Logo"
-              className="h-8"
+              className="h-8 "
             />
           </Link>
         </div>

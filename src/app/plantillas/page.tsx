@@ -2,7 +2,7 @@ export default function plantillas() {
   return (
     <>
       <div>
-        <p>hello</p>
+        <p>Plantillas</p>
       </div>
     </>
   );

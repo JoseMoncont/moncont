@@ -4,7 +4,7 @@ export default function Nosotros() {
   return (
     <>
       <div>
-        <p>hello</p>
+        <p>Nosotros</p>
       </div>
     </>
   );
