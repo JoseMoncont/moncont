@@ -1,4 +1,3 @@
-
 .naranja {
   color: #f47a30;
 }
@@ -23,8 +22,7 @@
 }
 
 .alabaster {
-  color: #d9dbdc;
-  color-scheme: #d9dbdc;
+  color: #d9dbdc !important
 }
 
 .fondo-alabaster {

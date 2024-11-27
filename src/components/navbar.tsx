@@ -33,7 +33,7 @@ export default function NavBar() {
   };
 
   return (
-    <nav className="bg-gray-100 dark:bg-gray-900 dark:text-white rounded-full md:w-9/12 align-middle mt-20 lg:mt-10">
+    <nav className="bg-gray-100 dark:bg-gray-900 dark:text-white rounded-full w-full md:w-full align-middle mt-20 lg:mt-10">
       <div className="max-w-screen-xl mx-auto flex items-center justify-between p-4">
         {/* Logo */}
         <div className="flex items-center">
@@ -44,32 +44,6 @@ export default function NavBar() {
               className="h-8"
             />
           </Link>
-        </div>
-
-        <div>
-          <button
-            className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-200 dark:text-gray-400 dark:hover:bg-gray-700"
-            onClick={toggleMobileMenu}
-            aria-controls="navbar-default"
-            aria-expanded={isMobileMenuOpen}
-          >
-            <span className="sr-only">Abrir menú</span>
-            <i className="fa-solid fa-bars"></i>
-            {/* <svg
-            className="w-6 h-6"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            strokeWidth={2}
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M4 6h16M4 12h16m-7 6h7"
-            />
-          </svg> */}
-          </button>
         </div>
 
         {/* Botón de menú para pantallas pequeñas */}
@@ -84,7 +58,7 @@ export default function NavBar() {
           <ul className="flex flex-col lg:flex-row lg:space-x-8 p-4 lg:p-0 lg:mt-0 border lg:border-0 border-gray-100 lg:rounded-none rounded-md bg-gray-100 lg:bg-transparent dark:bg-gray-800 dark:border-gray-700 lg:dark:bg-transparent">
             <li>
               <Link
-                href="#"
+                href="/plantillas"
                 className="block px-3 py-2 text-gray-700 rounded hover:bg-gray-200 dark:text-white dark:hover:bg-gray-700"
               >
                 Plantillas
@@ -92,15 +66,15 @@ export default function NavBar() {
             </li>
             <li>
               <Link
-                href="#"
+                href="/servicios"
                 className="block px-3 py-2 text-gray-700 rounded hover:bg-gray-200 dark:text-white dark:hover:bg-gray-700"
               >
-                Precios
+                Servicios
               </Link>
             </li>
             <li>
               <Link
-                href="#"
+                href="/nosotros"
                 className="block px-3 py-2 text-gray-700 rounded hover:bg-gray-200 dark:text-white dark:hover:bg-gray-700"
               >
                 Nosotros
@@ -114,19 +88,33 @@ export default function NavBar() {
           </ul>
         </div>
 
-        {/* Botón para cambiar el tema */}
-        <button
-          onClick={toggleTheme}
-          className={`${
-            theme === "light"
-              ? "bg-gray-200 text-gray-800"
-              : "bg-gray-700 text-white"
-          } px-3 py-2 text-sm font-medium rounded-full ml-4`}
-        >
-          <i
-            className={`${theme === "light" ? "fas fa-moon" : "fas fa-sun"}`}
-          ></i>
-        </button>
+        <div className="flex">
+          <div>
+            <button
+              className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-200 dark:text-gray-400 dark:hover:bg-gray-700"
+              onClick={toggleMobileMenu}
+              aria-controls="navbar-default"
+              aria-expanded={isMobileMenuOpen}
+            >
+              <span className="sr-only">Abrir menú</span>
+              <i className="fa-solid fa-bars"></i>
+            </button>
+          </div>
+          {/* Botón para cambiar el tema */}
+
+          <button
+            onClick={toggleTheme}
+            className={`${
+              theme === "light"
+                ? "bg-gray-200 text-gray-800"
+                : "bg-gray-700 text-white"
+            } px-3 py-2 text-sm font-medium rounded-full ml-4`}
+          >
+            <i
+              className={`${theme === "light" ? "fas fa-moon" : "fas fa-sun"}`}
+            ></i>
+          </button>
+        </div>
       </div>
     </nav>
   );

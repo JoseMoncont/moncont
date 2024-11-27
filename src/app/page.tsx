@@ -5,9 +5,9 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)] dark:bg-slate-950">
+    <div className="grid grid-rows-[0px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)] dark:bg-slate-950">
       <NavBar></NavBar>
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
+      <main className="flex flex-col gap-8 row-start-2 items-start sm:items-start">
         <Image
           className="dark:invert"
           src="/next.svg"
@@ -16,20 +16,20 @@ export default function Home() {
           height={38}
           priority
         />
-        <div>
-          <p className="text-4xl dark:text-white gris">
+        <div className="">
+          <p className="text-3xl  md:text-4xl dark:text-white gris">
             Transformamos tus ideas en experiencias{" "}
-            <span className="dark:alabaster fondo-naranja">digitales</span>.
+            <span className="text-white naranja font-bold">digitales</span>.
           </p>
-          <p className="dark:text-slate-400">
+          <p className=" text-gray-500  dark:text-slate-400 pt-2">
             Ya sea una aplicación móvil, un sitio web o un prototipo, damos vida
             a tu visión con soluciones personalizadas y diseño profesional.
           </p>
         </div>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
+        <div className="flex gap-4  items-start  sm:flex-row">
           <Link
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
+            className="btn-primario  transition-colors flex items-center justify-center bg-foreground text-background  hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
             href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
             target="_blank"
             rel="noopener noreferrer"
@@ -37,7 +37,7 @@ export default function Home() {
             Cotizar
           </Link>
           <Link
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
+            className="btn-secundario dark:btn-secundario-dark border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
             href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
             target="_blank"
             rel="noopener noreferrer"
