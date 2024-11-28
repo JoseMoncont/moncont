@@ -1,12 +1,12 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import LogoN from "@/assets/logos/logo-n.svg";
-import LogoL from "@/assets/logos/logo-p.svg";
+import LogoN from "@/assets/logos/isotipo-a.svg";
+import LogoL from "@/assets/logos/isotipo-n.svg";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function NavBar() {
+export default function NavBar0() {
   const [theme, setTheme] = useState<string>("light");
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
 
