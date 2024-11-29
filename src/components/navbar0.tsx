@@ -18,12 +18,12 @@ export default function NavBar0() {
     document.documentElement.classList.toggle("dark", newTheme === "dark");
   };
 
-  const clearLocalStorage = () => {
-    localStorage.removeItem("theme"); // Elimina solo la clave "theme"
-    // localStorage.clear(); // Usa esto si quieres limpiar todo
-    setTheme("light"); // Establece el tema a light por defecto
-    document.documentElement.classList.remove("dark"); // Asegúrate de quitar la clase "dark"
-  };
+  // const clearLocalStorage = () => {
+  //   localStorage.removeItem("theme"); // Elimina solo la clave "theme"
+  //   // localStorage.clear(); // Usa esto si quieres limpiar todo
+  //   setTheme("light"); // Establece el tema a light por defecto
+  //   document.documentElement.classList.remove("dark"); // Asegúrate de quitar la clase "dark"
+  // };
 
   // Alternar el menú móvil
   const toggleMobileMenu = () => {
