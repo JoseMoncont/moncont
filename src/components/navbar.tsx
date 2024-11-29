@@ -120,9 +120,9 @@ export default function NavBar() {
             ></i>
           </button>
         </div>
-        <button onClick={clearLocalStorage} className="btn">
+        {/* <button onClick={clearLocalStorage} className="btn">
           Restablecer tema
-        </button>
+        </button> */}
       </div>
     </nav>
   );

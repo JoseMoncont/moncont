@@ -1,17 +1,34 @@
+"use client";
+
 import NavBar0 from "@/components/navbar0";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import Image from "next/image";
+import LogoL from "@/assets/logos/logo-p.svg";
+import LogoN from "@/assets/logos/logo-n.svg";
 import Link from "next/link";
+import { useState } from "react";
 
 export default function Home() {
+  const [theme, setTheme] = useState<string>("light");
+
+  const Modo = () => {
+    const tema = localStorage.getItem("theme");
+    if (tema == "light") {
+      setTheme("light");
+    } else {
+      setTheme("dark");
+    }
+  };
+
   return (
     <div className="grid grid-rows-[0px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)] dark:bg-slate-950">
       <NavBar0></NavBar0>
       <main className="flex flex-col gap-8 row-start-2 items-start sm:items-start">
+        
         <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
+          className=""
+          src={theme === "light" ? LogoL : LogoN}
+          alt="logo"
           width={180}
           height={38}
           priority

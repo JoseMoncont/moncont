@@ -10,13 +10,6 @@ export default function NavBar0() {
   const [theme, setTheme] = useState<string>("light");
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-  // Cargar tema desde localStorage o establecer "light" por defecto
-  useEffect(() => {
-    const storedTheme = localStorage.getItem("theme") || "light"; // Predeterminado "light"
-    setTheme(storedTheme);
-    document.documentElement.classList.toggle("dark", storedTheme === "dark");
-  }, []);
-
   // Cambiar tema y actualizar localStorage
   const toggleTheme = () => {
     const newTheme = theme === "dark" ? "light" : "dark";
@@ -37,11 +30,18 @@ export default function NavBar0() {
     setMobileMenuOpen(!isMobileMenuOpen);
   };
 
+  // Cargar tema desde localStorage o establecer "light" por defecto
+  useEffect(() => {
+    const storedTheme = localStorage.getItem("theme") || "light"; // Predeterminado "light"
+    setTheme(storedTheme);
+    document.documentElement.classList.toggle("dark", storedTheme === "dark");
+  }, []);
+
   return (
-    <nav className="bg-gray-100 dark:bg-gray-900 dark:text-white rounded-full w-full md:w-full lg:w-9/12 align-middle mt-20 lg:mt-10">
+    <nav className="bg-gray-100 dark:bg-gray-900 dark:text-white rounded-full w-full md:w-full lg:w-8/12 align-middle mt-20 lg:mt-10">
       <div className="max-w-screen-xl mx-auto flex items-center justify-between p-4">
         {/* Logo */}
-        <div className="flex items-center">
+        <div className="flex items-center  w-24">
           <Link href="/">
             <Image
               src={theme === "light" ? LogoL : LogoN}
@@ -120,9 +120,9 @@ export default function NavBar0() {
             ></i>
           </button>
         </div>
-        <button onClick={clearLocalStorage} className="btn">
+        {/* <button onClick={clearLocalStorage} className="btn">
           Restablecer tema
-        </button>
+        </button> */}
       </div>
     </nav>
   );
