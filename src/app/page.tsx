@@ -4,12 +4,12 @@ import NavBar0 from "@/components/navbar0";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import Image from "next/image";
 import LogoL from "@/assets/logos/logo-p.svg";
-import LogoN from "@/assets/logos/logo-n.svg";
+// import LogoN from "@/assets/logos/logo-n.svg";
 import Link from "next/link";
-import { useState } from "react";
+
 
 export default function Home() {
-  const [theme, setTheme] = useState<string>("light");
+
 
 
 
@@ -20,7 +20,7 @@ export default function Home() {
         
         <Image
           className=""
-          src={theme === "light" ? LogoL : LogoN}
+          src={LogoL }
           alt="logo"
           width={180}
           height={38}
