@@ -19,7 +19,7 @@ export default function Principal() {
           height={38}
           priority
         />
-        <div className="text-center mt-8">
+        <div className="text-start mt-8">
           <p className="text-3xl md:text-4xl dark:text-white gris poppins-regular">
             Transformamos tus ideas en experiencias{" "}
             <span className="text-white naranja font-bold poppins-bold">

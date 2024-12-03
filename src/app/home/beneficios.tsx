@@ -33,14 +33,14 @@ const benefits = [
 
 export default function Beneficios() {
   return (
-    <section className=" py-16 bg-gray-50 dark:bg-slate-800 w-9/12 ">
+    <section className=" py-16 bg-gray-50 dark:bg-slate-800 px-16 ">
       <div className="md:grid grid-cols-2 ">
         <div className=" content-center justify-center mx-auto md:w-96 mb-10">
-          <p className="text-3xl font-bold text-gray-800 dark:text-white sm:text-4xl poppins-bold">
+          <p className="text-3xl font-bold text-gray-800 dark:text-white sm:text-4xl poppins-bold text-center md:text-start">
             {" "}
             ¿Por qué elegirnos?
           </p>
-          <p className="mt-4 text-gray-600 dark:text-gray-400 roboto-regular">
+          <p className="mt-4 text-gray-600 dark:text-gray-400 roboto-regular text-center md:text-start">
             Creamos soluciones digitales que conectan con tu audiencia y
             potencian tus ideas.
           </p>
