@@ -4,6 +4,7 @@
    
     border-radius: 0.5rem;
     font-weight: 600;
+    font-family: 'Poppins';
   
     color: aliceblue;
     text-align: center;
@@ -24,8 +25,22 @@
   border: 1px solid #f47a30;
   color: #f47a30;
   border-radius: 0.5rem;
+  font-family: 'Poppins';
   font-weight: 600;
   text-align: center;
+  transition: background-color 0.3s ease, transform 0.2s ease; 
+  align-items: center;
+  
+}
+
+.btn-terciario{
+
+  color: #f47a30;
+
+  font-family: 'Poppins';
+  font-weight: 600;
+  text-align: center;
+  text-decoration-line: underline;
   transition: background-color 0.3s ease, transform 0.2s ease; 
   align-items: center;
   
