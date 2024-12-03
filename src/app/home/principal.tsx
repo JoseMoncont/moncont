@@ -3,7 +3,6 @@
 import Image from "next/image";
 import LogoL from "@/assets/logos/logo-p.svg";
 import Link from "next/link";
-import NavBar0 from "@/components/navbar0";
 
 export default function Principal() {
   return (

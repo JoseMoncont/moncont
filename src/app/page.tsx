@@ -2,7 +2,6 @@
 
 import NavBar0 from "@/components/navbar0";
 import "@fortawesome/fontawesome-free/css/all.min.css";
-import Link from "next/link";
 import Footer from "@/components/footer";
 import Principal from "@/app/home/principal";
 import Beneficios from "./home/beneficios";
