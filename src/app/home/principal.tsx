@@ -34,14 +34,14 @@ export default function Principal() {
         </div>
         <div className="flex gap-4 items-center mt-8">
           <Link
-            className="btn-primario transition-colors flex items-center justify-center bg-foreground text-background hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
+            className="btn-primario transition-colors flex items-center justify-center bg-foreground text-background hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 poppins-bold"
             href="/cotizacion"
             rel="noopener noreferrer"
           >
             Comienza hoy
           </Link>
           <Link
-            className="btn-secundario dark:btn-secundario-dark border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
+            className="btn-secundario dark:btn-secundario-dark poppins-bold border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
             href="/plantillas"
             rel="noopener noreferrer"
           >

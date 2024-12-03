@@ -86,7 +86,7 @@ export default function NavBar0() {
               </Link>
             </li>
             <li>
-              <button className="btn-primario block w-full lg:w-auto px-3 py-2 ">
+              <button className="btn-primario block w-full lg:w-auto px-3 py-2 poppins-medium">
                 Cotizar
               </button>
             </li>
